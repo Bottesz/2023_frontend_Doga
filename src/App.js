@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import {AdatProvider} from './context/AdatContext';
+import Tesztek from './components/Tesztek';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <AdatProvider>
+    <div className="container mt-4">
+     <header className='border-bottom mb-4'>
+      <h1>23Teszt</h1>
+     </header>
     </div>
+  
+    <Tesztek/>
+    </AdatProvider>
   );
 }
 
